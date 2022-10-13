@@ -55,7 +55,11 @@ class CodeUp1013 {
 /** 기초입출력 문자2개 입력받아 순서 바꿔 출력하기 */
 class CodeUp1014 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char a = sc.next().charAt(0);
+        char b = sc.next().charAt(0);
 
+        System.out.printf("%c %c",b,a); // !!!!!!!!!!!!!!!!! 문자형 출력은 %c !!!!!!!!!!!!!!!!!!!
     }
 }
 
@@ -83,19 +87,26 @@ class CodeUp1018 {
     public static void main(String[] args) {
         Scanner sc=  new Scanner(System.in);
 
-        /* Stirng time[] = sc.next().split(":");  // 배열선언후 :로 split(나눈다)
-        *  System.out.println(time[0]+":"+time[1]);  */
+        String time[] = sc.next().split(":");  // 배열선언후 :로 split(나눈다)
+        System.out.println(time[0]+":"+time[1]);
 
-        int h = sc.nextInt();
+        /*int h = sc.nextInt();
         int m = sc.nextInt();
-        System.out.printf("%d:%d",h,m);
+        System.out.printf("%d:%d",h,m);*/
 
     }
 }
 
+
 /** 연,원,일 입력받아 지정된 형식으로 출력하기 */
 class CodeUp1019 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String date[] = sc.nextLine().split("\\."); // 점.닷은 혼자쓸수없다. 쪼갤때 \\를 포함해야하는 문자가 몇개있음
+        int year = Integer.parseInt(date[0]);
+        int month = Integer.parseInt(date[1]);
+        int day = Integer.parseInt(date[2]);
 
+        System.out.printf("%04d.%02d.%02d",year,month,day); // 년도도 4자리로 받아준다.
     }
 }
