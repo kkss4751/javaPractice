@@ -1,8 +1,10 @@
-package com.example.javapractice.pastCampany.Object;
+package com.example.javapractice.pastCampany.Object_oriented;
 
 /** 학생 클래스*/
-public class Ch01_Student {
+public class Ch01_Object {
     /* 멤버변수 */
+    /*class Student 학생클래스로 만듬 */
+
     int studentNumber; //학생번호
     String studentName; //학생이름
     int majorCode; //전공번호
